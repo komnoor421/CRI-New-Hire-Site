@@ -1,0 +1,131 @@
+<!--
+	Komron Noorbakhsh
+	Corporate Reports Inc. NEW HIRE
+	Jr. Front End Developer Test
+	Completed: December 19th, 2014
+-->
+
+<!DOCTYPE html>
+<html>
+<head lang="en">
+
+	<meta charset="uft-8">
+	<title>CRI New Hire Website</title>
+	<meta name="description" content="CRI New Hire Front End Developer Test">
+	<meta name="author" content="Komron Noorbakhsh">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Open+Sans">
+	<link rel="stylesheet" type="text/css" href="custom.css">
+	<link rel="stylesheet" type="text/css" href="skeleton.css">
+
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+	<script src="http://malsup.github.com/jquery.cycle2.js"></script>
+
+	<script type="text/javascript">
+		$(function() { //When the document loads
+	  		$("#navbtn1").bind("click", function() {
+	    		$(window).scrollTop($("#crew_container").offset().top); //scroll to div with container as ID.
+	    		return false; //Prevent Default and event bubbling.
+	  		});
+	  		$("#navbtn2").bind("click", function() {
+	    		$(window).scrollTop($("#contact_container").offset().top); //scroll to div with container as ID.
+	    		return false; //Prevent Default and event bubbling.
+	  		});
+		});
+	</script>
+
+</head>
+
+<body>
+
+	<div id="navbar_container">
+		<div class="container">
+			<div id="mobile_nav" class="two columns">
+				<img class="logo_pic" src="images/logo.gif">
+			</div>
+			<div id="nav1" class="two columns offset-by-three">
+				<p><a href="#" id="navbtn1">GET TO KNOW US</a></p>
+			</div>
+			<div id="nav2" class="three columns offset-by-one">
+				<p><a href="#" id="navbtn2">GET IN TOUCH WITH US</a></p>
+			</div>
+		</div>
+	</div>
+	<div id="slideshow_container" class="cycle-slideshow"
+		data-cycle-fx="scrollHorz"
+		data-cycle-speed="500"
+		data-cycle-caption-plugin="caption2"
+		data-cycle-overlay-fx-sel=">div">
+		<div class="cycle-overlay"></div>
+		<div class="cycle-pager"></div>
+		<img class="slide_pic" src="images/slide1.jpg" data-cycle-title="Slide Headline" data-cycle-desc="Vestibulum tempus est in ullamcorper blandit. Cras in augue eget nunc tincidunt egestas a ac justo.">
+		<img class="slide_pic" src="images/slide2.jpg" data-cycle-title="Other Slide Headline" data-cycle-desc="Vestibulum tempus est in ullamcorper blandit. Cras in augue eget nunc tincidunt egestas a ac justo.">
+	</div>
+	<div id="crew_container">
+		<div id="crew_head_container" class="container">
+			<div id="crew_header" class="five columns">
+				<h1>GET TO KNOW THE CREW</h1>
+				<p class="sub_head">SOME ARE MORE AWESOME THAN OTHERS</p>
+			</div>
+			
+		</div>
+		<div class="container">
+			<div class="profile one-third column">
+				<img class="crew_pic" src="images/profile1.gif">
+				<h2 class="crew_head">SECTION TITLE</h2>
+				<p class="crew_info">NULLA PRETIUM ELEIFEND TRISTIQUE. FUSCE BIBENDUM SIT AMET NULLA EU CURSUS.</p>
+			</div>
+			<div class="profile one-third column">
+				<img class="crew_pic" src="images/profile2.gif">
+				<h2 class="crew_head">SECTION TITLE</h2>
+				<p class="crew_info">IVAMUS ET IACULIS EX, AC MATTIS VELIT. VIVAMUS EUISMOD, TORTOR VITAE AUCTOR VARIUS, NULLA NISL.</p>
+			</div>
+			<div class=" profile one-third column">
+				<img class="crew_pic" src="images/profile3.gif">
+				<h2 class="crew_head">SECTION TITLE</h2>
+				<p class="crew_info">NAM SAGITTIS INTERDUM AUGUE, SED LACINIA LOREM CONGUE EGET. VIVAMUS QUIS ENIM SED LESUADA. CONSEQUAT.</p>
+			</div>
+		</div>
+	</div>
+	<div id="contact_container">
+		<div class="container">
+			<div id="contact_form" class="five columns">
+				<h1>CONTACT FORM</h1>
+				<p class="sub_head">USING PHP AND JQUERY</p>
+				<form id="form">
+					<input class="text" type="text" placeholder="YOUR NAME"><br>
+					<input class="text" type="text" placeholder="YOUR EMAIL"><br>
+					<input class="text" type="text" placeholder="YOUR PHONE NUMBER"><br>
+					<input class="text" type="text" placeholder="YOUR WEBSITE"><br>
+					<input class="btn" type="image" src="images/submit_btn.gif" alt="Submit">
+				</form>
+			</div>
+			<div id="map" class="five columns offset-by-two">
+				<h1>DROP BY FOR A VISIT</h1>
+				<p class="sub_head">
+					3610 PIEDMONT RD NE<br>
+					ATLANTA, GA. 30305<br><br>
+					O: (404) 233-2230
+				</p>
+				<a href="https://www.google.com/maps/place/3610+Piedmont+Rd+NE,+Atlanta,+GA+30305/@33.8530484,-84.3819265,17z/data=!3m1!4b1!4m2!3m1!1s0x88f50f640b47aeeb:0x36efe316ae81fe7d">
+					<img id="map_pic" src="images/map.jpg">
+				</a>
+			</div>
+		</div>
+	</div>
+	<div id="footer_container">
+		<div class="container">
+			<div id="foot_logo_container" class="two columns">
+				<img id="foot_logo" src="images/foot_logo.gif">
+			</div>
+			<div id="foot_info" class="six columns offset-by-two">
+				<img id="foot_pic" src="images/footer_info.gif">
+			</div>
+		</div>
+	</div>
+
+</body>
+
+</html>
